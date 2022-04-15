@@ -1,17 +1,14 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+import 'app.dart';
+import 'bloc_observer.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Bloc Counter Doc',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Container(),
-    );
-  }
+//* We're initializing the CounterObserver and calling runApp with the
+//* CounterApp widget which renders the Counter Screen and its Features (logic).
+void main() {
+  BlocOverrides.runZoned(
+    () => runApp(const CounterApp()),
+    blocObserver: CounterObserver(),
+  );
 }
