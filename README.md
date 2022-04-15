@@ -1,16 +1,15 @@
 # flutter_bloc_counter_doc
 
-A new Flutter project.
+Flutter Bloc Counter Doc is an example of how to create a CounterBloc to implement the classic Flutter Counter App.
 
-## Getting Started
+Build a Counter in Flutter using the Bloc library.
 
-This project is a starting point for a Flutter application.
+Key Topics:
 
-A few resources to get you started if this is your first Flutter project:
+    Observe state changes with BlocObserver.
+    BlocProvider, Flutter widget which provides a bloc to its children.
+    BlocBuilder, Flutter widget that handles building the widget in response to new states.
+    Using Cubit instead of Bloc. What's the difference?
+    Adding events with context.read.⚡
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter Version: 2.10.1
